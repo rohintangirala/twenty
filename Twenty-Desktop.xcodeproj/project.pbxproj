@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D71EFCC660005F0683 /* AppDelegate.swift */; };
+		A59551DA1EFCC660005F0683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D91EFCC660005F0683 /* ViewController.swift */; };
+		A59551DC1EFCC660005F0683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59551DB1EFCC660005F0683 /* Assets.xcassets */; };
+		A59551DF1EFCC660005F0683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59551DD1EFCC660005F0683 /* Main.storyboard */; };
+		A59551EA1EFCC660005F0683 /* Twenty_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */; };
+		A59551F51EFCC660005F0683 /* Twenty_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A59551E61EFCC660005F0683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A59551CC1EFCC660005F0683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59551D31EFCC660005F0683;
+			remoteInfo = "Twenty-Desktop";
+		};
+		A59551F11EFCC660005F0683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A59551CC1EFCC660005F0683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59551D31EFCC660005F0683;
+			remoteInfo = "Twenty-Desktop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A59551D41EFCC660005F0683 /* Twenty-Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twenty-Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59551D71EFCC660005F0683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A59551D91EFCC660005F0683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A59551DB1EFCC660005F0683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A59551DE1EFCC660005F0683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A59551E01EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59551E51EFCC660005F0683 /* Twenty-DesktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twenty-DesktopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twenty_DesktopTests.swift; sourceTree = "<group>"; };
+		A59551EB1EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59551F01EFCC660005F0683 /* Twenty-DesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twenty-DesktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twenty_DesktopUITests.swift; sourceTree = "<group>"; };
+		A59551F61EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A59551D11EFCC660005F0683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59551E21EFCC660005F0683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59551ED1EFCC660005F0683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A59551CB1EFCC660005F0683 = {
+			isa = PBXGroup;
+			children = (
+				A59551D61EFCC660005F0683 /* Twenty-Desktop */,
+				A59551E81EFCC660005F0683 /* Twenty-DesktopTests */,
+				A59551F31EFCC660005F0683 /* Twenty-DesktopUITests */,
+				A59551D51EFCC660005F0683 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A59551D51EFCC660005F0683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A59551D41EFCC660005F0683 /* Twenty-Desktop.app */,
+				A59551E51EFCC660005F0683 /* Twenty-DesktopTests.xctest */,
+				A59551F01EFCC660005F0683 /* Twenty-DesktopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A59551D61EFCC660005F0683 /* Twenty-Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				A59551D71EFCC660005F0683 /* AppDelegate.swift */,
+				A59551D91EFCC660005F0683 /* ViewController.swift */,
+				A59551DB1EFCC660005F0683 /* Assets.xcassets */,
+				A59551DD1EFCC660005F0683 /* Main.storyboard */,
+				A59551E01EFCC660005F0683 /* Info.plist */,
+			);
+			path = "Twenty-Desktop";
+			sourceTree = "<group>";
+		};
+		A59551E81EFCC660005F0683 /* Twenty-DesktopTests */ = {
+			isa = PBXGroup;
+			children = (
+				A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */,
+				A59551EB1EFCC660005F0683 /* Info.plist */,
+			);
+			path = "Twenty-DesktopTests";
+			sourceTree = "<group>";
+		};
+		A59551F31EFCC660005F0683 /* Twenty-DesktopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */,
+				A59551F61EFCC660005F0683 /* Info.plist */,
+			);
+			path = "Twenty-DesktopUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A59551D31EFCC660005F0683 /* Twenty-Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59551F91EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty-Desktop" */;
+			buildPhases = (
+				A59551D01EFCC660005F0683 /* Sources */,
+				A59551D11EFCC660005F0683 /* Frameworks */,
+				A59551D21EFCC660005F0683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Twenty-Desktop";
+			productName = "Twenty-Desktop";
+			productReference = A59551D41EFCC660005F0683 /* Twenty-Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A59551E41EFCC660005F0683 /* Twenty-DesktopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59551FC1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty-DesktopTests" */;
+			buildPhases = (
+				A59551E11EFCC660005F0683 /* Sources */,
+				A59551E21EFCC660005F0683 /* Frameworks */,
+				A59551E31EFCC660005F0683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59551E71EFCC660005F0683 /* PBXTargetDependency */,
+			);
+			name = "Twenty-DesktopTests";
+			productName = "Twenty-DesktopTests";
+			productReference = A59551E51EFCC660005F0683 /* Twenty-DesktopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A59551EF1EFCC660005F0683 /* Twenty-DesktopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59551FF1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty-DesktopUITests" */;
+			buildPhases = (
+				A59551EC1EFCC660005F0683 /* Sources */,
+				A59551ED1EFCC660005F0683 /* Frameworks */,
+				A59551EE1EFCC660005F0683 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59551F21EFCC660005F0683 /* PBXTargetDependency */,
+			);
+			name = "Twenty-DesktopUITests";
+			productName = "Twenty-DesktopUITests";
+			productReference = A59551F01EFCC660005F0683 /* Twenty-DesktopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A59551CC1EFCC660005F0683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Rohin Tangirala";
+				TargetAttributes = {
+					A59551D31EFCC660005F0683 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82T6BNCGD9;
+						ProvisioningStyle = Automatic;
+					};
+					A59551E41EFCC660005F0683 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82T6BNCGD9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A59551D31EFCC660005F0683;
+					};
+					A59551EF1EFCC660005F0683 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82T6BNCGD9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A59551D31EFCC660005F0683;
+					};
+				};
+			};
+			buildConfigurationList = A59551CF1EFCC660005F0683 /* Build configuration list for PBXProject "Twenty-Desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A59551CB1EFCC660005F0683;
+			productRefGroup = A59551D51EFCC660005F0683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A59551D31EFCC660005F0683 /* Twenty-Desktop */,
+				A59551E41EFCC660005F0683 /* Twenty-DesktopTests */,
+				A59551EF1EFCC660005F0683 /* Twenty-DesktopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A59551D21EFCC660005F0683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59551DC1EFCC660005F0683 /* Assets.xcassets in Resources */,
+				A59551DF1EFCC660005F0683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59551E31EFCC660005F0683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59551EE1EFCC660005F0683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A59551D01EFCC660005F0683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59551DA1EFCC660005F0683 /* ViewController.swift in Sources */,
+				A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59551E11EFCC660005F0683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59551EA1EFCC660005F0683 /* Twenty_DesktopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59551EC1EFCC660005F0683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59551F51EFCC660005F0683 /* Twenty_DesktopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A59551E71EFCC660005F0683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59551D31EFCC660005F0683 /* Twenty-Desktop */;
+			targetProxy = A59551E61EFCC660005F0683 /* PBXContainerItemProxy */;
+		};
+		A59551F21EFCC660005F0683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59551D31EFCC660005F0683 /* Twenty-Desktop */;
+			targetProxy = A59551F11EFCC660005F0683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A59551DD1EFCC660005F0683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A59551DE1EFCC660005F0683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A59551F71EFCC660005F0683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A59551F81EFCC660005F0683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		A59551FA1EFCC660005F0683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82T6BNCGD9;
+				INFOPLIST_FILE = "Twenty-Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A59551FB1EFCC660005F0683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82T6BNCGD9;
+				INFOPLIST_FILE = "Twenty-Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A59551FD1EFCC660005F0683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82T6BNCGD9;
+				INFOPLIST_FILE = "Twenty-DesktopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twenty-Desktop.app/Contents/MacOS/Twenty-Desktop";
+			};
+			name = Debug;
+		};
+		A59551FE1EFCC660005F0683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82T6BNCGD9;
+				INFOPLIST_FILE = "Twenty-DesktopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twenty-Desktop.app/Contents/MacOS/Twenty-Desktop";
+			};
+			name = Release;
+		};
+		A59552001EFCC660005F0683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82T6BNCGD9;
+				INFOPLIST_FILE = "Twenty-DesktopUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Twenty-Desktop";
+			};
+			name = Debug;
+		};
+		A59552011EFCC660005F0683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 82T6BNCGD9;
+				INFOPLIST_FILE = "Twenty-DesktopUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Twenty-Desktop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A59551CF1EFCC660005F0683 /* Build configuration list for PBXProject "Twenty-Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59551F71EFCC660005F0683 /* Debug */,
+				A59551F81EFCC660005F0683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59551F91EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty-Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59551FA1EFCC660005F0683 /* Debug */,
+				A59551FB1EFCC660005F0683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A59551FC1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty-DesktopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59551FD1EFCC660005F0683 /* Debug */,
+				A59551FE1EFCC660005F0683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A59551FF1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty-DesktopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59552001EFCC660005F0683 /* Debug */,
+				A59552011EFCC660005F0683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A59551CC1EFCC660005F0683 /* Project object */;
+}
