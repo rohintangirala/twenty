@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A58A95DB1F00DEC8006003BF /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */; };
 		A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D71EFCC660005F0683 /* AppDelegate.swift */; };
 		A59551DA1EFCC660005F0683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D91EFCC660005F0683 /* ViewController.swift */; };
 		A59551DC1EFCC660005F0683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59551DB1EFCC660005F0683 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		A59551EA1EFCC660005F0683 /* Twenty_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */; };
 		A59551F51EFCC660005F0683 /* Twenty_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */; };
 		A59552061EFD9F8C005F0683 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59552051EFD9F8C005F0683 /* TableViewController.swift */; };
+		A5A44A5F1F00E1ED0005EA6A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A44A5C1F00E1E50005EA6A /* Charts.framework */; };
+		A5A44A601F00E1ED0005EA6A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5A44A5C1F00E1E50005EA6A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +34,45 @@
 			remoteGlobalIDString = A59551D31EFCC660005F0683;
 			remoteInfo = "Twenty-Desktop";
 		};
+		A5A44A5B1F00E1E50005EA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A44A561F00E1E50005EA6A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		A5A44A5D1F00E1E50005EA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A44A561F00E1E50005EA6A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		A5A44A611F00E1ED0005EA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A44A561F00E1E50005EA6A /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A5A44A631F00E1EE0005EA6A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5A44A601F00E1ED0005EA6A /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		A59551D41EFCC660005F0683 /* Twenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59551D71EFCC660005F0683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A59551D91EFCC660005F0683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +86,7 @@
 		A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twenty_DesktopUITests.swift; sourceTree = "<group>"; };
 		A59551F61EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A59552051EFD9F8C005F0683 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A5A44A561F00E1E50005EA6A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A44A5F1F00E1ED0005EA6A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +122,7 @@
 				A59551E81EFCC660005F0683 /* Twenty-DesktopTests */,
 				A59551F31EFCC660005F0683 /* Twenty-DesktopUITests */,
 				A59551D51EFCC660005F0683 /* Products */,
+				A5A44A561F00E1E50005EA6A /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				A59551DB1EFCC660005F0683 /* Assets.xcassets */,
 				A59551DD1EFCC660005F0683 /* Main.storyboard */,
 				A59551E01EFCC660005F0683 /* Info.plist */,
+				A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */,
 			);
 			path = "Twenty-Desktop";
 			sourceTree = "<group>";
@@ -125,6 +168,15 @@
 			path = "Twenty-DesktopUITests";
 			sourceTree = "<group>";
 		};
+		A5A44A571F00E1E50005EA6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5A44A5C1F00E1E50005EA6A /* Charts.framework */,
+				A5A44A5E1F00E1E50005EA6A /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +187,12 @@
 				A59551D01EFCC660005F0683 /* Sources */,
 				A59551D11EFCC660005F0683 /* Frameworks */,
 				A59551D21EFCC660005F0683 /* Resources */,
+				A5A44A631F00E1EE0005EA6A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5A44A621F00E1ED0005EA6A /* PBXTargetDependency */,
 			);
 			name = Twenty;
 			productName = "Twenty-Desktop";
@@ -221,6 +275,12 @@
 			mainGroup = A59551CB1EFCC660005F0683;
 			productRefGroup = A59551D51EFCC660005F0683 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A5A44A571F00E1E50005EA6A /* Products */;
+					ProjectRef = A5A44A561F00E1E50005EA6A /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A59551D31EFCC660005F0683 /* Twenty */,
@@ -229,6 +289,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A5A44A5C1F00E1E50005EA6A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A5A44A5B1F00E1E50005EA6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A5A44A5E1F00E1E50005EA6A /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = A5A44A5D1F00E1E50005EA6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A59551D21EFCC660005F0683 /* Resources */ = {
@@ -262,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59551DA1EFCC660005F0683 /* ViewController.swift in Sources */,
+				A58A95DB1F00DEC8006003BF /* BarChartViewController.swift in Sources */,
 				A59552061EFD9F8C005F0683 /* TableViewController.swift in Sources */,
 				A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */,
 			);
@@ -295,6 +373,11 @@
 			isa = PBXTargetDependency;
 			target = A59551D31EFCC660005F0683 /* Twenty */;
 			targetProxy = A59551F11EFCC660005F0683 /* PBXContainerItemProxy */;
+		};
+		A5A44A621F00E1ED0005EA6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = A5A44A611F00E1ED0005EA6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +488,7 @@
 		A59551FA1EFCC660005F0683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
@@ -419,6 +503,7 @@
 		A59551FB1EFCC660005F0683 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;

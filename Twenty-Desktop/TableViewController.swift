@@ -22,7 +22,10 @@ class TableViewController: NSViewController {
             gDates = []
             gMins = []
             if let bundle = Bundle.main.bundleIdentifier {
-                defaults.removePersistentDomain(forName: bundle)
+                defaults.set(gMins, forKey: "usageTimes")
+                defaults.synchronize()
+                defaults.set(gDates, forKey: "usageDates")
+                defaults.synchronize()
                 defaults.synchronize()
             }
             tableView.reloadData()

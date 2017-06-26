@@ -685,6 +685,7 @@
                     <tabViewItems>
                         <tabViewItem identifier="" id="amB-vW-bXV"/>
                         <tabViewItem identifier="" id="Nmj-px-W1g"/>
+                        <tabViewItem label="Graph" id="vuO-BI-4ha"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="6dq-NZ-2RE">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -695,6 +696,7 @@
                     <connections>
                         <segue destination="goI-Tr-cXA" kind="relationship" relationship="tabItems" id="xcT-tk-38P"/>
                         <segue destination="m5n-YX-foJ" kind="relationship" relationship="tabItems" id="xqq-Tk-OiX"/>
+                        <segue destination="kPd-zl-06V" kind="relationship" relationship="tabItems" id="yVC-ig-oP7"/>
                     </connections>
                 </tabViewController>
                 <customObject id="Cox-lO-uDS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -851,9 +853,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgg-Mn-OvE">
-                                <rect key="frame" x="193" y="241" width="64" height="17"/>
+                                <rect key="frame" x="153" y="241" width="145" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="fxs-C4-awG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="xUS-ww-bCk"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0 min" id="O3w-SU-I7N">
                                     <font key="font" metaFont="system"/>
@@ -862,7 +864,7 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator wantsLayer="YES" focusRingType="exterior" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Jvc-Uj-ym2">
-                                <rect key="frame" x="100" y="186" width="251" height="20"/>
+                                <rect key="frame" x="99" y="186" width="252" height="20"/>
                             </progressIndicator>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-34-2ZW">
                                 <rect key="frame" x="142" y="113" width="166" height="32"/>
@@ -893,7 +895,34 @@
                 </viewController>
                 <customObject id="nQj-MN-3cq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="1103"/>
+            <point key="canvasLocation" x="1246" y="427"/>
+        </scene>
+        <!--Graph-->
+        <scene sceneID="AHI-ez-1B3">
+            <objects>
+                <viewController title="Graph" id="kPd-zl-06V" customClass="BarChartViewController" customModule="Twenty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="HSY-z5-8aw">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="L3F-aj-FDC" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="L3F-aj-FDC" firstAttribute="top" secondItem="HSY-z5-8aw" secondAttribute="top" id="YV0-CX-zOd"/>
+                            <constraint firstAttribute="trailing" secondItem="L3F-aj-FDC" secondAttribute="trailing" id="bc0-bb-PIZ"/>
+                            <constraint firstAttribute="bottom" secondItem="L3F-aj-FDC" secondAttribute="bottom" id="c5F-nu-YTi"/>
+                            <constraint firstItem="L3F-aj-FDC" firstAttribute="leading" secondItem="HSY-z5-8aw" secondAttribute="leading" id="dzI-gR-NlK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="L3F-aj-FDC" id="sfn-I9-sDq"/>
+                    </connections>
+                </viewController>
+                <customObject id="vKr-zM-cjC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="887"/>
         </scene>
     </scenes>
 </document>
