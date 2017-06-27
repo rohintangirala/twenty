@@ -17,8 +17,8 @@ class ViewController: NSViewController {
     var breakSoundTimer = Timer()
     var voiceTimer = Timer()
     var breakVoiceTimer = Timer()
-    var count = 10
-    let originalCount = 10
+    var count = 1200
+    let originalCount = 1200
     var totalMin = 1
     let defaults = UserDefaults.standard
     var usageTimes = [Double]()
@@ -63,7 +63,7 @@ class ViewController: NSViewController {
             soundTimer.invalidate()
             breakTimer.invalidate()
             breakSoundTimer.invalidate()
-            count = 10
+            count = 1200
             timeLabel.stringValue = "0 min"
             month = calendar.component(.month, from: date)
             day = calendar.component(.day, from: date)
@@ -203,7 +203,8 @@ class ViewController: NSViewController {
         }*/
         breakTimer.invalidate()
         breakSoundTimer.invalidate()
-        count = 10
+        count = 1200
+    
         
         
         createMainTimers()
