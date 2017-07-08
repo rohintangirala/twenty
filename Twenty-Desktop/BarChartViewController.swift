@@ -10,39 +10,35 @@ import Cocoa
 import Charts
 
 class BarChartViewController: NSViewController {
-
-    let defaults = UserDefaults.standard
-    var days: [String]!
-    //var initialViewController : ViewController = ViewController()
+    let defaults : UserDefaults = UserDefaults.standard
+    var days : [String] = []
     
     @IBOutlet weak var barChartView: BarChartView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
+        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear() {
-        //var mins: [Double] = []
-        //var dates: [String] = []
         defaults.synchronize()
+
+        // Get data from UserDefaults
         if let _ : AnyObject = (defaults.object(forKey: "usageTimes") as AnyObject??)! {
             let mins = defaults.object(forKey: "usageTimes") as AnyObject?? as! [Double]
+
             if let _ : AnyObject = (defaults.object(forKey: "usageDates") as AnyObject??)! {
                 let dates = defaults.object(forKey: "usageDates") as AnyObject?? as! [String]
-                print(mins)
-                print(dates)
                 setChart(dataPoints: dates, values: mins)
                 
             }
         }
     }
     
+    // Create bar graph and initialize with values
     func setChart(dataPoints: [String], values: [Double]) {
-        
         barChartView.clearValues()
-        
         var dataEntries: [BarChartDataEntry] = Array()
         var counter = 0.0
         
@@ -60,14 +56,5 @@ class BarChartViewController: NSViewController {
         self.barChartView.legend.enabled = false
         self.barChartView.xAxis.drawLabelsEnabled = false
         self.barChartView.chartDescription?.text = "";
-        
     }
-
-    
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
-    }
-    
 }

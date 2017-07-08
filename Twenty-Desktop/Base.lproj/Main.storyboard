@@ -847,7 +847,7 @@
         <!--Timer-->
         <scene sceneID="ICA-rK-bv0">
             <objects>
-                <viewController title="Timer" id="goI-Tr-cXA" customClass="ViewController" customModule="Twenty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Timer" id="goI-Tr-cXA" customClass="TimerViewController" customModule="Twenty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="i5x-Qc-adx">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

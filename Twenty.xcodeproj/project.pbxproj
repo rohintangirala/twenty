@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A58A95DB1F00DEC8006003BF /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */; };
 		A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D71EFCC660005F0683 /* AppDelegate.swift */; };
-		A59551DA1EFCC660005F0683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D91EFCC660005F0683 /* ViewController.swift */; };
+		A59551DA1EFCC660005F0683 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D91EFCC660005F0683 /* TimerViewController.swift */; };
 		A59551DC1EFCC660005F0683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59551DB1EFCC660005F0683 /* Assets.xcassets */; };
 		A59551DF1EFCC660005F0683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59551DD1EFCC660005F0683 /* Main.storyboard */; };
 		A59551EA1EFCC660005F0683 /* Twenty_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */; };
@@ -75,7 +75,7 @@
 		A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		A59551D41EFCC660005F0683 /* Twenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59551D71EFCC660005F0683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A59551D91EFCC660005F0683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A59551D91EFCC660005F0683 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A59551DB1EFCC660005F0683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A59551DE1EFCC660005F0683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A59551E01EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,12 +140,12 @@
 			isa = PBXGroup;
 			children = (
 				A59551D71EFCC660005F0683 /* AppDelegate.swift */,
-				A59551D91EFCC660005F0683 /* ViewController.swift */,
+				A59551D91EFCC660005F0683 /* TimerViewController.swift */,
 				A59552051EFD9F8C005F0683 /* TableViewController.swift */,
+				A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */,
 				A59551DB1EFCC660005F0683 /* Assets.xcassets */,
 				A59551DD1EFCC660005F0683 /* Main.storyboard */,
 				A59551E01EFCC660005F0683 /* Info.plist */,
-				A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */,
 			);
 			path = "Twenty-Desktop";
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59551DA1EFCC660005F0683 /* ViewController.swift in Sources */,
+				A59551DA1EFCC660005F0683 /* TimerViewController.swift in Sources */,
 				A58A95DB1F00DEC8006003BF /* BarChartViewController.swift in Sources */,
 				A59552061EFD9F8C005F0683 /* TableViewController.swift in Sources */,
 				A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */,
