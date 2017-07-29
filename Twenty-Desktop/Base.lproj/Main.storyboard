@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="12062"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.1" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -848,26 +850,37 @@
         <scene sceneID="ICA-rK-bv0">
             <objects>
                 <viewController title="Timer" id="goI-Tr-cXA" customClass="TimerViewController" customModule="Twenty" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="i5x-Qc-adx">
+                    <view key="view" wantsLayer="YES" id="i5x-Qc-adx">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgg-Mn-OvE">
-                                <rect key="frame" x="153" y="241" width="145" height="17"/>
+                                <rect key="frame" x="153" y="223" width="145" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="xUS-ww-bCk"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0 min" id="O3w-SU-I7N">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="30" name="HelveticaNeue-UltraLight"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <progressIndicator wantsLayer="YES" focusRingType="exterior" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Jvc-Uj-ym2">
-                                <rect key="frame" x="99" y="186" width="252" height="20"/>
+                                <rect key="frame" x="99" y="168" width="252" height="20"/>
+                                <shadow key="shadow">
+                                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </shadow>
+                                <contentFilters>
+                                    <ciFilter name="CIHueAdjust">
+                                        <configuration>
+                                            <real key="inputAngle" value="4"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
                             </progressIndicator>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-34-2ZW">
-                                <rect key="frame" x="142" y="113" width="166" height="32"/>
+                                <rect key="frame" x="142" y="95" width="166" height="32"/>
                                 <buttonCell key="cell" type="push" title="Start Working Period" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e7s-s6-pDU">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -905,17 +918,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="L3F-aj-FDC" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3F-aj-FDC" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="42" y="37" width="408" height="224"/>
                             </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhK-TD-C4L">
+                                <rect key="frame" x="178" y="12" width="137" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Working Period" id="Wbj-D2-TAd">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-Jj-MEd">
+                                <rect key="frame" x="10" y="160" width="26" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Min" id="aS5-2w-nmH">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5s-VN-pup">
+                                <rect key="frame" x="157" y="277" width="137" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Usage Time (Minutes)" id="i4s-By-2fj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="L3F-aj-FDC" firstAttribute="top" secondItem="HSY-z5-8aw" secondAttribute="top" id="YV0-CX-zOd"/>
+                            <constraint firstItem="hzE-Jj-MEd" firstAttribute="centerY" secondItem="HSY-z5-8aw" secondAttribute="centerY" id="6eh-Tc-9lP"/>
+                            <constraint firstItem="L3F-aj-FDC" firstAttribute="top" secondItem="I5s-VN-pup" secondAttribute="bottom" constant="8" id="AcD-vz-nvd"/>
+                            <constraint firstItem="EhK-TD-C4L" firstAttribute="centerX" secondItem="HSY-z5-8aw" secondAttribute="centerX" id="V3L-qv-zRe"/>
+                            <constraint firstItem="L3F-aj-FDC" firstAttribute="top" secondItem="HSY-z5-8aw" secondAttribute="top" constant="35" id="YV0-CX-zOd"/>
                             <constraint firstAttribute="trailing" secondItem="L3F-aj-FDC" secondAttribute="trailing" id="bc0-bb-PIZ"/>
-                            <constraint firstAttribute="bottom" secondItem="L3F-aj-FDC" secondAttribute="bottom" id="c5F-nu-YTi"/>
-                            <constraint firstItem="L3F-aj-FDC" firstAttribute="leading" secondItem="HSY-z5-8aw" secondAttribute="leading" id="dzI-gR-NlK"/>
+                            <constraint firstAttribute="bottom" secondItem="L3F-aj-FDC" secondAttribute="bottom" constant="50" id="c5F-nu-YTi"/>
+                            <constraint firstItem="L3F-aj-FDC" firstAttribute="leading" secondItem="HSY-z5-8aw" secondAttribute="leading" constant="50" id="dzI-gR-NlK"/>
+                            <constraint firstItem="I5s-VN-pup" firstAttribute="centerX" secondItem="HSY-z5-8aw" secondAttribute="centerX" id="gsz-ZG-Krk"/>
+                            <constraint firstItem="EhK-TD-C4L" firstAttribute="top" secondItem="L3F-aj-FDC" secondAttribute="bottom" constant="8" id="lL3-07-Xcb"/>
+                            <constraint firstItem="L3F-aj-FDC" firstAttribute="leading" secondItem="hzE-Jj-MEd" secondAttribute="trailing" constant="8" id="sZu-h5-hxh"/>
                         </constraints>
                     </view>
+                    <touchBar key="touchBar" id="mpu-J4-Fan">
+                        <nil name="touchBarItems"/>
+                    </touchBar>
                     <connections>
                         <outlet property="barChartView" destination="L3F-aj-FDC" id="sfn-I9-sDq"/>
                     </connections>
