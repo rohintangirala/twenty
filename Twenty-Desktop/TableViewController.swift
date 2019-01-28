@@ -12,7 +12,7 @@ class TableViewController: NSViewController {
     let defaults : UserDefaults = UserDefaults.standard
 
     var gDates: [String] = []
-    var gMins : [Double] = []
+    var gMins: [Double] = []
      
     @IBOutlet weak var tableView: NSTableView!
      
@@ -84,6 +84,7 @@ extension TableViewController: NSTableViewDataSource {
         return self.gDates.count
     }
 }
+
 
 extension TableViewController: NSTableViewDelegate {
     fileprivate enum CellIdentifiers {

@@ -10,33 +10,33 @@ import Cocoa
 
 class TimerViewController: NSViewController {
 
-    let originalCount : Int = 10
-    let defaults : UserDefaults = UserDefaults.standard
+    let originalCount: Int = 1200
+    let defaults: UserDefaults = UserDefaults.standard
 
-    var month : Int = 0
-    var day : Int = 0
-    var year : Int = 0
-    var hour : Int = 0
-    var minutes : Int = 0
-    var count : Int = 0
-    var totalMin : Int = 1
-    var currentDateTime : String = ""
-    var minutesString : String = ""
-    var startEndDateTime : String = ""
-    var workTimer : Timer = Timer()
-    var soundTimer : Timer = Timer()
-    var breakTimer : Timer = Timer()
-    var breakSoundTimer : Timer = Timer()
-    var voiceTimer : Timer = Timer()
-    var breakVoiceTimer : Timer = Timer()
-    var date : Date = Date()
-    var calendar : Calendar = Calendar.current
-    var usageTimes : [Double] = []
-    var usageDates : [String] = []
+    var month: Int = 0
+    var day: Int = 0
+    var year: Int = 0
+    var hour: Int = 0
+    var minutes: Int = 0
+    var count: Int = 0
+    var totalMin: Int = 1
+    var currentDateTime: String = ""
+    var minutesString: String = ""
+    var startEndDateTime: String = ""
+    var workTimer: Timer = Timer()
+    var soundTimer: Timer = Timer()
+    var breakTimer: Timer = Timer()
+    var breakSoundTimer: Timer = Timer()
+    var voiceTimer: Timer = Timer()
+    var breakVoiceTimer: Timer = Timer()
+    var date: Date = Date()
+    var calendar: Calendar = Calendar.current
+    var usageTimes: [Double] = []
+    var usageDates: [String] = []
      
     @IBOutlet weak var startButton: NSButton!
     @IBOutlet weak var timeLabel: NSTextField!
-    @IBOutlet weak var timeProgress: NSProgressIndicator!
+    @IBOutlet weak var circularProgress: CircularProgressIndicator!
 
     @IBAction func startPressed(_ sender: Any) {
         // Follow corresponding steps depending on current working period 
@@ -63,12 +63,6 @@ class TimerViewController: NSViewController {
         self.count = originalCount
         self.view.wantsLayer = true
 
-    }
-
-    override func awakeFromNib() {
-        if self.view.layer != nil {
-            self.view.layer?.backgroundColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        }
     }
 
     override func viewDidAppear() {
@@ -125,7 +119,6 @@ class TimerViewController: NSViewController {
         currentDateTime = String(month) + "/" + String(day) + "/" + String(year) + " " + String(hour) + ":"
             + minutesString
         startEndDateTime = startEndDateTime + " to " + currentDateTime
-        timeProgress.doubleValue = 0
     }
 
     // Start main timers when starting working period
@@ -140,8 +133,10 @@ class TimerViewController: NSViewController {
     func workUpdate() {
         if(count > 0) {
             count = count - 1
-            timeProgress.doubleValue = 1-(Double(count)/Double(originalCount))
+            let timeProgressValue = 1-(Double(count)/Double(originalCount))
             timeLabel.stringValue = String(Int(round(Double(1000 * (count / 60))) / 1000) + 1) + " min"
+
+            circularProgress.updateProgress(newProgress: timeProgressValue)
 
             if (Double(count) / Double(60) == floor(Double(count) / Double(60))) {
                     totalMin = totalMin + 1
@@ -153,8 +148,9 @@ class TimerViewController: NSViewController {
     func breakUpdate() {
         if(count > 0) {
             count = count - 1
-            timeProgress.doubleValue = 1 - (Double(count) / Double(20))
+            let timeProgressValue = 1 - (Double(count) / Double(20))
             timeLabel.stringValue = String(count) + " seconds"
+            circularProgress.updateProgress(newProgress: timeProgressValue)
         }
     }
 
@@ -186,6 +182,7 @@ class TimerViewController: NSViewController {
         soundTimer.invalidate()
         breakTimer.invalidate()
         breakSoundTimer.invalidate()
+        circularProgress.updateProgress(newProgress: 0)
     }
 
     // Show local notification after 20 min working interval

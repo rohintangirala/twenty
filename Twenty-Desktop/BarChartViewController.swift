@@ -10,8 +10,8 @@ import Cocoa
 import Charts
 
 class BarChartViewController: NSViewController {
-    let defaults : UserDefaults = UserDefaults.standard
-    var days : [String] = []
+    let defaults: UserDefaults = UserDefaults.standard
+    var days: [String] = []
      
     @IBOutlet weak var barChartView: BarChartView!
      
@@ -36,12 +36,6 @@ class BarChartViewController: NSViewController {
                 }
         }
     }
-
-    override func awakeFromNib() {
-        if self.view.layer != nil {
-            self.view.layer?.backgroundColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        }
-    }
      
     // Create bar graph and initialize with values
     func setChart(dataPoints: [String], values: [Double]) {
@@ -56,12 +50,16 @@ class BarChartViewController: NSViewController {
         }
             
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Usage in minutes of each working period")
+        chartDataSet.setColor(NSUIColor(calibratedRed: 0.78, green: 0.09, blue: 0.87, alpha: 1.0))
         let chartData = BarChartData()
         chartData.addDataSet(chartDataSet)
         barChartView.data = chartData
+        barChartView.leftAxis.labelTextColor = NSUIColor.white
+        barChartView.rightAxis.labelTextColor = NSUIColor.white
         self.barChartView.xAxis.drawGridLinesEnabled = false
         self.barChartView.legend.enabled = false
         self.barChartView.xAxis.drawLabelsEnabled = false
         self.barChartView.chartDescription?.text = "";
+        self.barChartView.noDataTextColor = NSUIColor.white
     }
 }
