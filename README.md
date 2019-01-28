@@ -1,4 +1,4 @@
-![alt text](https://github.com/rohintangirala/Twenty-Desktop/blob/master/Twenty-Desktop/Assets.xcassets/twenty-brand-light.imageset/twenty-brand-dark.png "Twenty Logo")
+![alt text](https://github.com/rohintangirala/Twenty-Desktop/blob/master/Twenty-Desktop/Assets.xcassets/twenty-brand-dark.imageset/twenty-brand-dark.png "Twenty Logo")
 # Twenty-Desktop
 
 Twenty is a MacOS app to help prevent eyestrain from heavy computer usage
