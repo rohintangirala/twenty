@@ -740,7 +740,7 @@
                                 </constraints>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="justified" id="pe3-9e-cQc">
                                     <font key="font" metaFont="system"/>
-                                    <mutableString key="title">Welcome to Twenty! This app can help you deal with eye strain and manage usage time while using your computer. When you start working, press Start Working Period on the Timer tab to begin a session. After 20 minutes, you will receive a notification indicating that it is time for a break. During the break, follow the 20-20-20 rule, and look at something 20 feet away for 20 seconds. After 20 seconds, you will receive another notification indicating that you may return to your work. To end a working session, simply press Stop Working Period. To view your usage statistics, head over to the Usage Stats and Graph tabs.</mutableString>
+                                    <string key="title">Welcome to Twenty! This app can help you deal with eye strain and manage usage time while using your computer. When you start working, press Start Working Period on the Timer tab to begin a session. After 20 minutes, you will receive a notification indicating that it is time for a break. During the break, follow the 20-20-20 rule, and look at something 20 feet away for 20 seconds. After 20 seconds, you will receive another notification indicating that you may return to your work. To end a working session, simply press Stop Working Period. To view your usage statistics, head over to the Usage Stats and Graph tabs.</string>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -769,8 +769,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zy5-Dg-6DX">
-                                <rect key="frame" x="-1" y="-2" width="104" height="32"/>
-                                <buttonCell key="cell" type="push" title="Clear Data" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ie0-DK-kvY">
+                                <rect key="frame" x="5" y="4" width="95" height="23"/>
+                                <buttonCell key="cell" type="roundTextured" title="Clear Data" bezelStyle="texturedRounded" image="NSStopProgressTemplate" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ie0-DK-kvY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -779,13 +779,13 @@
                                 </connections>
                             </button>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZC-56-cEV">
-                                <rect key="frame" x="0.0" y="31" width="450" height="419"/>
+                                <rect key="frame" x="0.0" y="32" width="450" height="418"/>
                                 <clipView key="contentView" drawsBackground="NO" id="1fR-no-64n">
-                                    <rect key="frame" x="1" y="0.0" width="448" height="418"/>
+                                    <rect key="frame" x="1" y="0.0" width="448" height="417"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="let-Ev-AMD" viewBased="YES" id="2lU-Jm-wCF">
-                                            <rect key="frame" x="0.0" y="0.0" width="448" height="395"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="394"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -883,11 +883,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-ME-wIm">
+                                <rect key="frame" x="342" y="4" width="103" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="Iyj-fC-qV7"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" title="Export Data" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="left" alignment="right" borderStyle="border" inset="2" id="nKU-tU-A3a">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="exportData:" target="m5n-YX-foJ" id="ajJ-sk-oH7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="zy5-Dg-6DX" firstAttribute="leading" secondItem="TBy-hj-cLo" secondAttribute="leading" constant="5" id="6or-NB-RfA"/>
+                            <constraint firstAttribute="bottom" secondItem="yvv-ME-wIm" secondAttribute="bottom" constant="5" id="COR-dl-kjX"/>
                             <constraint firstItem="zy5-Dg-6DX" firstAttribute="top" secondItem="dZC-56-cEV" secondAttribute="bottom" constant="5" id="VNl-dE-l8C"/>
                             <constraint firstItem="dZC-56-cEV" firstAttribute="top" secondItem="TBy-hj-cLo" secondAttribute="top" id="VTX-MV-jfr"/>
+                            <constraint firstAttribute="trailing" secondItem="yvv-ME-wIm" secondAttribute="trailing" constant="5" id="Xpg-Vq-YKx"/>
                             <constraint firstItem="dZC-56-cEV" firstAttribute="leading" secondItem="TBy-hj-cLo" secondAttribute="leading" id="pBA-cn-QvY"/>
                             <constraint firstAttribute="trailing" secondItem="dZC-56-cEV" secondAttribute="trailing" id="uoT-CA-xxe"/>
                             <constraint firstAttribute="bottom" secondItem="zy5-Dg-6DX" secondAttribute="bottom" constant="5" id="vN0-3L-rzg"/>
@@ -958,7 +973,7 @@
                 </viewController>
                 <customObject id="nQj-MN-3cq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1238" y="525"/>
+            <point key="canvasLocation" x="1238" y="596"/>
         </scene>
         <!--Graph-->
         <scene sceneID="AHI-ez-1B3">
@@ -1022,6 +1037,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NSShareTemplate" width="11" height="16"/>
+        <image name="NSStopProgressTemplate" width="11" height="11"/>
         <image name="twenty-brand-light" width="900" height="350"/>
     </resources>
 </document>

@@ -9,10 +9,11 @@
 import Cocoa
 
 class TableViewController: NSViewController {
-    let defaults : UserDefaults = UserDefaults.standard
+    let defaults: UserDefaults = UserDefaults.standard
 
     var gDates: [String] = []
     var gMins: [Double] = []
+    var exportString: String = ""
      
     @IBOutlet weak var tableView: NSTableView!
      
@@ -54,6 +55,15 @@ class TableViewController: NSViewController {
         return true
     }
      
+    @IBAction func exportData(_ sender: Any) {
+        let text = exportString + "\n\nSent from Twenty for MacOS"
+
+        let sharingPicker = NSSharingServicePicker(items: [text])
+
+        sharingPicker.delegate = self
+        sharingPicker.show(relativeTo: NSZeroRect, of: sender as! NSView, preferredEdge: .minY)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
             
@@ -100,9 +110,11 @@ extension TableViewController: NSTableViewDelegate {
         if tableColumn == tableView.tableColumns[0] {
             text = self.gDates[row]
             cellIdentifier = CellIdentifiers.DateCell
+            exportString.append(text + "\t")
         } else if tableColumn == tableView.tableColumns[1] {
             text = String(Int(self.gMins[row])) + (self.gMins[row] > 1.0 ? " minutes" : " minute")
             cellIdentifier = CellIdentifiers.TimeCell
+            exportString.append(text + "\n")
         }
             
         if let cell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
@@ -111,5 +123,13 @@ extension TableViewController: NSTableViewDelegate {
         }
 
         return nil
+    }
+}
+
+extension TableViewController: NSSharingServicePickerDelegate {
+    func sharingServicePicker(_ sharingServicePicker: NSSharingServicePicker, sharingServicesForItems items: [Any], proposedSharingServices proposedServices: [NSSharingService]) -> [NSSharingService] {
+        var share = proposedServices
+        share[0].subject = "My Usage Data from Twenty"
+        return share
     }
 }
