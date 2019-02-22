@@ -50,13 +50,25 @@ class BarChartViewController: NSViewController {
         }
             
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Usage in minutes of each working period")
-        chartDataSet.setColor(NSUIColor(calibratedRed: 0.78, green: 0.09, blue: 0.87, alpha: 1.0))
+        chartDataSet.setColors(
+            NSUIColor(calibratedRed: 0.6, green: 0, blue: 0.69, alpha: 1.0),
+            NSUIColor(calibratedRed: 1.0, green: 0, blue: 0.38, alpha: 1.0),
+            NSUIColor(calibratedRed: 0.22, green: 0, blue: 0.98, alpha: 1.0)
+        )
+
         let chartData = BarChartData()
         chartData.addDataSet(chartDataSet)
-        barChartView.data = chartData
-        barChartView.leftAxis.labelTextColor = NSUIColor.white
-        barChartView.rightAxis.labelTextColor = NSUIColor.white
+        chartDataSet.drawValuesEnabled = false
+        self.barChartView.data = chartData
+        self.barChartView.leftAxis.labelTextColor = NSUIColor.white
+        self.barChartView.rightAxis.drawLabelsEnabled = false
         self.barChartView.xAxis.drawGridLinesEnabled = false
+        self.barChartView.leftAxis.drawGridLinesEnabled = false
+        self.barChartView.rightAxis.drawGridLinesEnabled = false
+        self.barChartView.leftAxis.axisMinimum = 0.0
+        self.barChartView.xAxis.drawAxisLineEnabled = false
+        self.barChartView.leftAxis.drawAxisLineEnabled = false
+        self.barChartView.rightAxis.drawAxisLineEnabled = false
         self.barChartView.legend.enabled = false
         self.barChartView.xAxis.drawLabelsEnabled = false
         self.barChartView.chartDescription?.text = "";
