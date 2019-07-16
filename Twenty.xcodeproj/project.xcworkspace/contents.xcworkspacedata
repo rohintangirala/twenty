@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/rohintangirala/Documents/Xcode Projects/Twenty-Desktop/Twenty.xcodeproj">
+      location = "self:Twenty.xcodeproj">
    </FileRef>
 </Workspace>

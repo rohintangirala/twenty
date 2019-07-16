@@ -3,111 +3,78 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A538708F21FD016100E0344B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A538708C21FD014300E0344B /* Charts.framework */; };
-		A538709021FD016100E0344B /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A538708C21FD014300E0344B /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A578C09921FD15BF0068E945 /* CircularProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578C09821FD15BF0068E945 /* CircularProgressIndicator.swift */; };
-		A58A95DB1F00DEC8006003BF /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */; };
-		A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D71EFCC660005F0683 /* AppDelegate.swift */; };
-		A59551DA1EFCC660005F0683 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551D91EFCC660005F0683 /* TimerViewController.swift */; };
-		A59551DC1EFCC660005F0683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59551DB1EFCC660005F0683 /* Assets.xcassets */; };
-		A59551DF1EFCC660005F0683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59551DD1EFCC660005F0683 /* Main.storyboard */; };
-		A59551EA1EFCC660005F0683 /* Twenty_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */; };
-		A59551F51EFCC660005F0683 /* Twenty_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */; };
-		A59552061EFD9F8C005F0683 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59552051EFD9F8C005F0683 /* TableViewController.swift */; };
+		8693099F8C64169A7E48E949 /* libPods-Twenty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D27604BA1FBA257C45F0779A /* libPods-Twenty.a */; };
+		A546160D22DC5B130001CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546160C22DC5B130001CF19 /* AppDelegate.swift */; };
+		A546160F22DC5B130001CF19 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546160E22DC5B130001CF19 /* TimerViewController.swift */; };
+		A546161122DC5B160001CF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A546161022DC5B160001CF19 /* Assets.xcassets */; };
+		A546161422DC5B160001CF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A546161222DC5B160001CF19 /* Main.storyboard */; };
+		A546162022DC5B160001CF19 /* TwentyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546161F22DC5B160001CF19 /* TwentyTests.swift */; };
+		A546162B22DC5B160001CF19 /* TwentyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546162A22DC5B160001CF19 /* TwentyUITests.swift */; };
+		A546163922DD6DF10001CF19 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546163822DD6DF10001CF19 /* TableViewController.swift */; };
+		A546163B22DD6E920001CF19 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546163A22DD6E920001CF19 /* BarChartViewController.swift */; };
+		A546163D22DD6F3A0001CF19 /* CircularProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546163C22DD6F3A0001CF19 /* CircularProgressIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A538708B21FD014300E0344B /* PBXContainerItemProxy */ = {
+		A546161C22DC5B160001CF19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A538708621FD014300E0344B /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		A538708D21FD014300E0344B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A538708621FD014300E0344B /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
-		A538709121FD016100E0344B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A538708621FD014300E0344B /* Charts.xcodeproj */;
+			containerPortal = A546160122DC5B130001CF19 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A58A4ED274A941CA248EA921;
-			remoteInfo = Charts;
+			remoteGlobalIDString = A546160822DC5B130001CF19;
+			remoteInfo = Twenty;
 		};
-		A59551E61EFCC660005F0683 /* PBXContainerItemProxy */ = {
+		A546162722DC5B160001CF19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A59551CC1EFCC660005F0683 /* Project object */;
+			containerPortal = A546160122DC5B130001CF19 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A59551D31EFCC660005F0683;
-			remoteInfo = "Twenty-Desktop";
-		};
-		A59551F11EFCC660005F0683 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A59551CC1EFCC660005F0683 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A59551D31EFCC660005F0683;
-			remoteInfo = "Twenty-Desktop";
+			remoteGlobalIDString = A546160822DC5B130001CF19;
+			remoteInfo = Twenty;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A5A44A631F00E1EE0005EA6A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A538709021FD016100E0344B /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		A538708621FD014300E0344B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
-		A578C09821FD15BF0068E945 /* CircularProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressIndicator.swift; sourceTree = "<group>"; };
-		A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
-		A59551D41EFCC660005F0683 /* Twenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59551D71EFCC660005F0683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A59551D91EFCC660005F0683 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		A59551DB1EFCC660005F0683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A59551DE1EFCC660005F0683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A59551E01EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A59551E51EFCC660005F0683 /* TwentyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twenty_DesktopTests.swift; sourceTree = "<group>"; };
-		A59551EB1EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A59551F01EFCC660005F0683 /* TwentyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twenty_DesktopUITests.swift; sourceTree = "<group>"; };
-		A59551F61EFCC660005F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A59552051EFD9F8C005F0683 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5B2AD409B0FF94CDABED9FA1 /* Pods-Twenty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twenty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twenty/Pods-Twenty.release.xcconfig"; sourceTree = "<group>"; };
+		A546160922DC5B130001CF19 /* Twenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A546160C22DC5B130001CF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A546160E22DC5B130001CF19 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A546161022DC5B160001CF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A546161322DC5B160001CF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A546161522DC5B160001CF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A546161622DC5B160001CF19 /* Twenty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Twenty.entitlements; sourceTree = "<group>"; };
+		A546161B22DC5B160001CF19 /* TwentyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A546161F22DC5B160001CF19 /* TwentyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyTests.swift; sourceTree = "<group>"; };
+		A546162122DC5B160001CF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A546162622DC5B160001CF19 /* TwentyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A546162A22DC5B160001CF19 /* TwentyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyUITests.swift; sourceTree = "<group>"; };
+		A546162C22DC5B160001CF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A546163822DD6DF10001CF19 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A546163A22DD6E920001CF19 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		A546163C22DD6F3A0001CF19 /* CircularProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressIndicator.swift; sourceTree = "<group>"; };
+		D27604BA1FBA257C45F0779A /* libPods-Twenty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Twenty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73475627EC202E6BCDB78B2 /* Pods-Twenty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twenty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twenty/Pods-Twenty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A59551D11EFCC660005F0683 /* Frameworks */ = {
+		A546160622DC5B130001CF19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A538708F21FD016100E0344B /* Charts.framework in Frameworks */,
+				8693099F8C64169A7E48E949 /* libPods-Twenty.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59551E21EFCC660005F0683 /* Frameworks */ = {
+		A546161822DC5B160001CF19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59551ED1EFCC660005F0683 /* Frameworks */ = {
+		A546162322DC5B160001CF19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,217 +84,197 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A538708721FD014300E0344B /* Products */ = {
+		A546160022DC5B130001CF19 = {
 			isa = PBXGroup;
 			children = (
-				A538708C21FD014300E0344B /* Charts.framework */,
-				A538708E21FD014300E0344B /* ChartsTests.xctest */,
+				A546160B22DC5B130001CF19 /* Twenty */,
+				A546161E22DC5B160001CF19 /* TwentyTests */,
+				A546162922DC5B160001CF19 /* TwentyUITests */,
+				A546160A22DC5B130001CF19 /* Products */,
+				C9EB6A89075AD1F9C3A96D2A /* Pods */,
+				A63F461511EE145FEA65DFA7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A546160A22DC5B130001CF19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A546160922DC5B130001CF19 /* Twenty.app */,
+				A546161B22DC5B160001CF19 /* TwentyTests.xctest */,
+				A546162622DC5B160001CF19 /* TwentyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A59551CB1EFCC660005F0683 = {
+		A546160B22DC5B130001CF19 /* Twenty */ = {
 			isa = PBXGroup;
 			children = (
-				A59551D61EFCC660005F0683 /* Twenty-Desktop */,
-				A59551E81EFCC660005F0683 /* Twenty-DesktopTests */,
-				A59551F31EFCC660005F0683 /* Twenty-DesktopUITests */,
-				A59551D51EFCC660005F0683 /* Products */,
-				A538708621FD014300E0344B /* Charts.xcodeproj */,
+				A546160C22DC5B130001CF19 /* AppDelegate.swift */,
+				A546160E22DC5B130001CF19 /* TimerViewController.swift */,
+				A546161022DC5B160001CF19 /* Assets.xcassets */,
+				A546161222DC5B160001CF19 /* Main.storyboard */,
+				A546161522DC5B160001CF19 /* Info.plist */,
+				A546161622DC5B160001CF19 /* Twenty.entitlements */,
+				A546163822DD6DF10001CF19 /* TableViewController.swift */,
+				A546163A22DD6E920001CF19 /* BarChartViewController.swift */,
+				A546163C22DD6F3A0001CF19 /* CircularProgressIndicator.swift */,
 			);
+			path = Twenty;
 			sourceTree = "<group>";
 		};
-		A59551D51EFCC660005F0683 /* Products */ = {
+		A546161E22DC5B160001CF19 /* TwentyTests */ = {
 			isa = PBXGroup;
 			children = (
-				A59551D41EFCC660005F0683 /* Twenty.app */,
-				A59551E51EFCC660005F0683 /* TwentyTests.xctest */,
-				A59551F01EFCC660005F0683 /* TwentyUITests.xctest */,
+				A546161F22DC5B160001CF19 /* TwentyTests.swift */,
+				A546162122DC5B160001CF19 /* Info.plist */,
 			);
-			name = Products;
+			path = TwentyTests;
 			sourceTree = "<group>";
 		};
-		A59551D61EFCC660005F0683 /* Twenty-Desktop */ = {
+		A546162922DC5B160001CF19 /* TwentyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A59551D71EFCC660005F0683 /* AppDelegate.swift */,
-				A59551D91EFCC660005F0683 /* TimerViewController.swift */,
-				A59552051EFD9F8C005F0683 /* TableViewController.swift */,
-				A58A95DA1F00DEC8006003BF /* BarChartViewController.swift */,
-				A578C09821FD15BF0068E945 /* CircularProgressIndicator.swift */,
-				A59551DB1EFCC660005F0683 /* Assets.xcassets */,
-				A59551DD1EFCC660005F0683 /* Main.storyboard */,
-				A59551E01EFCC660005F0683 /* Info.plist */,
+				A546162A22DC5B160001CF19 /* TwentyUITests.swift */,
+				A546162C22DC5B160001CF19 /* Info.plist */,
 			);
-			path = "Twenty-Desktop";
+			path = TwentyUITests;
 			sourceTree = "<group>";
 		};
-		A59551E81EFCC660005F0683 /* Twenty-DesktopTests */ = {
+		A63F461511EE145FEA65DFA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A59551E91EFCC660005F0683 /* Twenty_DesktopTests.swift */,
-				A59551EB1EFCC660005F0683 /* Info.plist */,
+				D27604BA1FBA257C45F0779A /* libPods-Twenty.a */,
 			);
-			path = "Twenty-DesktopTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A59551F31EFCC660005F0683 /* Twenty-DesktopUITests */ = {
+		C9EB6A89075AD1F9C3A96D2A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A59551F41EFCC660005F0683 /* Twenty_DesktopUITests.swift */,
-				A59551F61EFCC660005F0683 /* Info.plist */,
+				F73475627EC202E6BCDB78B2 /* Pods-Twenty.debug.xcconfig */,
+				5B2AD409B0FF94CDABED9FA1 /* Pods-Twenty.release.xcconfig */,
 			);
-			path = "Twenty-DesktopUITests";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A59551D31EFCC660005F0683 /* Twenty */ = {
+		A546160822DC5B130001CF19 /* Twenty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A59551F91EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty" */;
+			buildConfigurationList = A546162F22DC5B160001CF19 /* Build configuration list for PBXNativeTarget "Twenty" */;
 			buildPhases = (
-				A59551D01EFCC660005F0683 /* Sources */,
-				A59551D11EFCC660005F0683 /* Frameworks */,
-				A59551D21EFCC660005F0683 /* Resources */,
-				A5A44A631F00E1EE0005EA6A /* Embed Frameworks */,
+				66F640C3E02FF8AD9392E3DD /* [CP] Check Pods Manifest.lock */,
+				A546160522DC5B130001CF19 /* Sources */,
+				A546160622DC5B130001CF19 /* Frameworks */,
+				A546160722DC5B130001CF19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A538709221FD016100E0344B /* PBXTargetDependency */,
 			);
 			name = Twenty;
-			productName = "Twenty-Desktop";
-			productReference = A59551D41EFCC660005F0683 /* Twenty.app */;
+			productName = Twenty;
+			productReference = A546160922DC5B130001CF19 /* Twenty.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A59551E41EFCC660005F0683 /* TwentyTests */ = {
+		A546161A22DC5B160001CF19 /* TwentyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A59551FC1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "TwentyTests" */;
+			buildConfigurationList = A546163222DC5B160001CF19 /* Build configuration list for PBXNativeTarget "TwentyTests" */;
 			buildPhases = (
-				A59551E11EFCC660005F0683 /* Sources */,
-				A59551E21EFCC660005F0683 /* Frameworks */,
-				A59551E31EFCC660005F0683 /* Resources */,
+				A546161722DC5B160001CF19 /* Sources */,
+				A546161822DC5B160001CF19 /* Frameworks */,
+				A546161922DC5B160001CF19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A59551E71EFCC660005F0683 /* PBXTargetDependency */,
+				A546161D22DC5B160001CF19 /* PBXTargetDependency */,
 			);
 			name = TwentyTests;
-			productName = "Twenty-DesktopTests";
-			productReference = A59551E51EFCC660005F0683 /* TwentyTests.xctest */;
+			productName = TwentyTests;
+			productReference = A546161B22DC5B160001CF19 /* TwentyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A59551EF1EFCC660005F0683 /* TwentyUITests */ = {
+		A546162522DC5B160001CF19 /* TwentyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A59551FF1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "TwentyUITests" */;
+			buildConfigurationList = A546163522DC5B160001CF19 /* Build configuration list for PBXNativeTarget "TwentyUITests" */;
 			buildPhases = (
-				A59551EC1EFCC660005F0683 /* Sources */,
-				A59551ED1EFCC660005F0683 /* Frameworks */,
-				A59551EE1EFCC660005F0683 /* Resources */,
+				A546162222DC5B160001CF19 /* Sources */,
+				A546162322DC5B160001CF19 /* Frameworks */,
+				A546162422DC5B160001CF19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A59551F21EFCC660005F0683 /* PBXTargetDependency */,
+				A546162822DC5B160001CF19 /* PBXTargetDependency */,
 			);
 			name = TwentyUITests;
-			productName = "Twenty-DesktopUITests";
-			productReference = A59551F01EFCC660005F0683 /* TwentyUITests.xctest */;
+			productName = TwentyUITests;
+			productReference = A546162622DC5B160001CF19 /* TwentyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A59551CC1EFCC660005F0683 /* Project object */ = {
+		A546160122DC5B130001CF19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Rohin Tangirala";
 				TargetAttributes = {
-					A59551D31EFCC660005F0683 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 82T6BNCGD9;
-						ProvisioningStyle = Automatic;
+					A546160822DC5B130001CF19 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
-					A59551E41EFCC660005F0683 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 82T6BNCGD9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A59551D31EFCC660005F0683;
+					A546161A22DC5B160001CF19 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A546160822DC5B130001CF19;
 					};
-					A59551EF1EFCC660005F0683 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 82T6BNCGD9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A59551D31EFCC660005F0683;
+					A546162522DC5B160001CF19 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A546160822DC5B130001CF19;
 					};
 				};
 			};
-			buildConfigurationList = A59551CF1EFCC660005F0683 /* Build configuration list for PBXProject "Twenty" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = A546160422DC5B130001CF19 /* Build configuration list for PBXProject "Twenty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A59551CB1EFCC660005F0683;
-			productRefGroup = A59551D51EFCC660005F0683 /* Products */;
+			mainGroup = A546160022DC5B130001CF19;
+			productRefGroup = A546160A22DC5B130001CF19 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A538708721FD014300E0344B /* Products */;
-					ProjectRef = A538708621FD014300E0344B /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				A59551D31EFCC660005F0683 /* Twenty */,
-				A59551E41EFCC660005F0683 /* TwentyTests */,
-				A59551EF1EFCC660005F0683 /* TwentyUITests */,
+				A546160822DC5B130001CF19 /* Twenty */,
+				A546161A22DC5B160001CF19 /* TwentyTests */,
+				A546162522DC5B160001CF19 /* TwentyUITests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		A538708C21FD014300E0344B /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = A538708B21FD014300E0344B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A538708E21FD014300E0344B /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = A538708D21FD014300E0344B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		A59551D21EFCC660005F0683 /* Resources */ = {
+		A546160722DC5B130001CF19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59551DC1EFCC660005F0683 /* Assets.xcassets in Resources */,
-				A59551DF1EFCC660005F0683 /* Main.storyboard in Resources */,
+				A546161122DC5B160001CF19 /* Assets.xcassets in Resources */,
+				A546161422DC5B160001CF19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59551E31EFCC660005F0683 /* Resources */ = {
+		A546161922DC5B160001CF19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59551EE1EFCC660005F0683 /* Resources */ = {
+		A546162422DC5B160001CF19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,60 +283,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66F640C3E02FF8AD9392E3DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twenty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		A59551D01EFCC660005F0683 /* Sources */ = {
+		A546160522DC5B130001CF19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A578C09921FD15BF0068E945 /* CircularProgressIndicator.swift in Sources */,
-				A59551DA1EFCC660005F0683 /* TimerViewController.swift in Sources */,
-				A58A95DB1F00DEC8006003BF /* BarChartViewController.swift in Sources */,
-				A59552061EFD9F8C005F0683 /* TableViewController.swift in Sources */,
-				A59551D81EFCC660005F0683 /* AppDelegate.swift in Sources */,
+				A546163D22DD6F3A0001CF19 /* CircularProgressIndicator.swift in Sources */,
+				A546160F22DC5B130001CF19 /* TimerViewController.swift in Sources */,
+				A546163B22DD6E920001CF19 /* BarChartViewController.swift in Sources */,
+				A546163922DD6DF10001CF19 /* TableViewController.swift in Sources */,
+				A546160D22DC5B130001CF19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59551E11EFCC660005F0683 /* Sources */ = {
+		A546161722DC5B160001CF19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59551EA1EFCC660005F0683 /* Twenty_DesktopTests.swift in Sources */,
+				A546162022DC5B160001CF19 /* TwentyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59551EC1EFCC660005F0683 /* Sources */ = {
+		A546162222DC5B160001CF19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59551F51EFCC660005F0683 /* Twenty_DesktopUITests.swift in Sources */,
+				A546162B22DC5B160001CF19 /* TwentyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A538709221FD016100E0344B /* PBXTargetDependency */ = {
+		A546161D22DC5B160001CF19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = A538709121FD016100E0344B /* PBXContainerItemProxy */;
+			target = A546160822DC5B130001CF19 /* Twenty */;
+			targetProxy = A546161C22DC5B160001CF19 /* PBXContainerItemProxy */;
 		};
-		A59551E71EFCC660005F0683 /* PBXTargetDependency */ = {
+		A546162822DC5B160001CF19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A59551D31EFCC660005F0683 /* Twenty */;
-			targetProxy = A59551E61EFCC660005F0683 /* PBXContainerItemProxy */;
-		};
-		A59551F21EFCC660005F0683 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A59551D31EFCC660005F0683 /* Twenty */;
-			targetProxy = A59551F11EFCC660005F0683 /* PBXContainerItemProxy */;
+			target = A546160822DC5B130001CF19 /* Twenty */;
+			targetProxy = A546162722DC5B160001CF19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A59551DD1EFCC660005F0683 /* Main.storyboard */ = {
+		A546161222DC5B160001CF19 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A59551DE1EFCC660005F0683 /* Base */,
+				A546161322DC5B160001CF19 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -397,16 +360,17 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A59551F71EFCC660005F0683 /* Debug */ = {
+		A546162D22DC5B160001CF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -425,14 +389,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -446,8 +411,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -455,16 +421,17 @@
 			};
 			name = Debug;
 		};
-		A59551F81EFCC660005F0683 /* Release */ = {
+		A546162E22DC5B160001CF19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -483,14 +450,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -498,145 +466,177 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		A59551FA1EFCC660005F0683 /* Debug */ = {
+		A546163022DC5B160001CF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73475627EC202E6BCDB78B2 /* Pods-Twenty.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Twenty/Twenty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
-				INFOPLIST_FILE = "Twenty-Desktop/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				INFOPLIST_FILE = Twenty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Twenty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		A59551FB1EFCC660005F0683 /* Release */ = {
+		A546163122DC5B160001CF19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B2AD409B0FF94CDABED9FA1 /* Pods-Twenty.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Twenty/Twenty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
-				INFOPLIST_FILE = "Twenty-Desktop/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				INFOPLIST_FILE = Twenty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Twenty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		A59551FD1EFCC660005F0683 /* Debug */ = {
+		A546163322DC5B160001CF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
-				INFOPLIST_FILE = "Twenty-DesktopTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopTests";
+				INFOPLIST_FILE = TwentyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TwentyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twenty.app/Contents/MacOS/Twenty";
 			};
 			name = Debug;
 		};
-		A59551FE1EFCC660005F0683 /* Release */ = {
+		A546163422DC5B160001CF19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
-				INFOPLIST_FILE = "Twenty-DesktopTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopTests";
+				INFOPLIST_FILE = TwentyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TwentyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twenty.app/Contents/MacOS/Twenty";
 			};
 			name = Release;
 		};
-		A59552001EFCC660005F0683 /* Debug */ = {
+		A546163622DC5B160001CF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
-				INFOPLIST_FILE = "Twenty-DesktopUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopUITests";
+				INFOPLIST_FILE = TwentyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TwentyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Twenty-Desktop";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Twenty;
 			};
 			name = Debug;
 		};
-		A59552011EFCC660005F0683 /* Release */ = {
+		A546163722DC5B160001CF19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T6BNCGD9;
-				INFOPLIST_FILE = "Twenty-DesktopUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Twenty-DesktopUITests";
+				INFOPLIST_FILE = TwentyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TwentyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Twenty-Desktop";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Twenty;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A59551CF1EFCC660005F0683 /* Build configuration list for PBXProject "Twenty" */ = {
+		A546160422DC5B130001CF19 /* Build configuration list for PBXProject "Twenty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A59551F71EFCC660005F0683 /* Debug */,
-				A59551F81EFCC660005F0683 /* Release */,
+				A546162D22DC5B160001CF19 /* Debug */,
+				A546162E22DC5B160001CF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A59551F91EFCC660005F0683 /* Build configuration list for PBXNativeTarget "Twenty" */ = {
+		A546162F22DC5B160001CF19 /* Build configuration list for PBXNativeTarget "Twenty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A59551FA1EFCC660005F0683 /* Debug */,
-				A59551FB1EFCC660005F0683 /* Release */,
+				A546163022DC5B160001CF19 /* Debug */,
+				A546163122DC5B160001CF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A59551FC1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "TwentyTests" */ = {
+		A546163222DC5B160001CF19 /* Build configuration list for PBXNativeTarget "TwentyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A59551FD1EFCC660005F0683 /* Debug */,
-				A59551FE1EFCC660005F0683 /* Release */,
+				A546163322DC5B160001CF19 /* Debug */,
+				A546163422DC5B160001CF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A59551FF1EFCC660005F0683 /* Build configuration list for PBXNativeTarget "TwentyUITests" */ = {
+		A546163522DC5B160001CF19 /* Build configuration list for PBXNativeTarget "TwentyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A59552001EFCC660005F0683 /* Debug */,
-				A59552011EFCC660005F0683 /* Release */,
+				A546163622DC5B160001CF19 /* Debug */,
+				A546163722DC5B160001CF19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A59551CC1EFCC660005F0683 /* Project object */;
+	rootObject = A546160122DC5B130001CF19 /* Project object */;
 }
